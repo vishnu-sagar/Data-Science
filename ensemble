@@ -1,1 +1,43 @@
 
+import pandas as pd
+import os
+from sklearn import preprocessing,ensemble,model_selection,tree
+
+
+
+
+
+dir="D:\ML"
+nur_train=pd.read_csv(os.path.join(dir,"nursery.csv"))
+print(nur_train.info())
+print(nur_train.columns)
+
+
+for col in nur_train.columns:
+    le_all=preprocessing.LabelEncoder()
+    le_all.fit(nur_train[col])
+    print(le_all.classes_)
+    nur_train[col]=le_all.transform(nur_train[col])
+    
+features=['parents', 'has_nurs', 'form', 'children', 'housing', 'finance','social', 'health']    
+X_train=nur_train[features]
+y_train=nur_train['class']
+
+
+bag_estimator.fit(X_train,y_train)    
+
+
+scores=model_selection.cross_validate(bag_estimator,X_train,y_train,cv=10)
+
+print(scores.get('test_score').mean())
+print(scores.get('train_score').mean())
+
+dt=tree.DecisionTreeClassifier()
+grid={'n_estimators':[10,20,50,100],'bootstrap':[True,False],'bootstrap_features':[True,False],'base_estimator__criterion':['gini','entropy']}
+bag_estimator=ensemble.BaggingClassifier(base_estimator=dt)
+final_estimator=model_selection.GridSearchCV(bag_estimator,grid,cv=10)
+final_estimator.fit(X_train,y_train)
+print(final_estimator.best_score_)
+print(final_estimator.best_params_)
+results=final_estimator.cv_results_
+print(results.get('mean_train_score').mean())
