@@ -12,7 +12,7 @@ print(heart_train.info())
 print(heart_train.columns)
 #features=['age', 'sex', 'cp', 'trestbps', 'chol', 'oldpeak', 'ca', 'thal']
 
-features=['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach','exang', 'oldpeak', 'slope', 'ca', 'thal']
+features=['age', 'sex', 'cp', 'trestbps', 'chol', 'restecg', 'thalach', 'oldpeak', 'slope', 'ca', 'thal']
 X_train=heart_train[features]
 y_train=heart_train['target']
 dt=tree.DecisionTreeClassifier()
