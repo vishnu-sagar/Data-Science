@@ -1,0 +1,44 @@
+import pandas as pd
+import os
+import numpy as np
+from sklearn import preprocessing,ensemble,model_selection,tree,metrics,naive_bayes
+
+# Creating a bar plot
+
+
+dir="C:\\Users\\vichu\\Documents\ML"
+heart_train=pd.read_csv(os.path.join(dir,"heart.csv"))
+print(heart_train.info())
+print(heart_train.columns)
+#features=['age', 'sex', 'cp', 'trestbps', 'chol', 'oldpeak', 'ca', 'thal']
+
+features=['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach','exang', 'oldpeak', 'slope', 'ca', 'thal']
+X_train=heart_train[features]
+y_train=heart_train['target']
+dt=tree.DecisionTreeClassifier()
+
+
+dt.fit(X_train,y_train)
+
+importance=dt.feature_importances_
+print(importance.sum())
+
+scores=model_selection.cross_validate(dt,X_train,y_train,cv=10)
+
+print(scores.get('test_score').mean())
+print(scores.get('train_score').mean())
+
+
+grid={'criterion':['gini','entropy'],'max_depth':[3,4,5,6,7],'min_samples_split':[2,10,20,30]}
+final_estimator=model_selection.GridSearchCV(dt,grid,cv=10)
+final_estimator.fit(X_train,y_train)
+print(final_estimator.best_score_)
+results=final_estimator.cv_results_
+
+
+
+
+print(results.get('mean_test_score').mean())
+print(results.get('mean_train_score').mean())
+for feat, importance in zip(heart_train.columns, dt.feature_importances_):
+    print ('feature: {f}, importance: {i}'.format(f=feat, i=importance))
