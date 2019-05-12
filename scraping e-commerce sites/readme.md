@@ -1,6 +1,4 @@
-Word to Markdown Converter
-Results of converting "Readme.md"
-Markdown
+
 #
 # E-shopping-scraper
 
