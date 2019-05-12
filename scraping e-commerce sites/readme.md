@@ -17,7 +17,7 @@ in screenshots directory we have uploaded our first version screenshots. you can
 ## **Tools:**
 
 - python
--
+- Xpath
 - scrapy
 
 ## **How to execute this project?**
