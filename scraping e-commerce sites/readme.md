@@ -83,6 +83,6 @@ I am  working for further releases for the extensive use of customers.
 Thanks for your time.
 
 ## **Executing the spider**
-![alt text](https://github.com/vishnu-sagar/data-science/blob/master/scraping%20e-commerce%20sites/demo%20videos/how%20to%20execute%20spider.avi)
+[![Watch the video](https://github.com/vishnu-sagar/data-science/blob/master/scraping%20e-commerce%20sites/demo%20videos/how%20to%20execute%20spider.avi)
 
 
