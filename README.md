@@ -35,15 +35,17 @@ conda install -c conda-forge/label/cf201901 scrapy
 
 **STEP**** -2       **
 
-Navigate cmd to your desired folder run commands
+Navigate cmd to your desired folder and run 
 
 scrapy startproject flip
+
+cd flip
 
 scrapy genspider flip\_spider
 
 **STEP-3**
 
-paste all the files in the github folder to the above created project location and run
+paste all the files in the github folder to the above created project location
 
 **STEP-4**
 
@@ -54,7 +56,7 @@ That&#39;s it you are ready !!!!!
 
 **LAST STEP(**don&#39;t get tired)
 
-To start crawling run
+**To start crawling run
 
 scrapy crawl flip\_spider
 
