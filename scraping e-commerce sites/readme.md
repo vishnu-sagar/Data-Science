@@ -4,7 +4,7 @@
 
 Python attacking E-commerce sites :)
 
-execute the crawler only in this way:
+execute the crawler in this way:
 
 scrapy crawl flip\_spider
 
@@ -62,7 +62,9 @@ you will be prompted to enter the desired product name
  ![]
 SMASH that ENTER key!!!!!!!!!!.
 
-Results will be exported to csv file in the desired location you provided
+Results will be saved and automatically opened in a csv file.
+
+Note: Please close the csv file before searching the same product again (we cant write data if a file is being locked by another application)
 
 ## **Features:**
 
@@ -71,7 +73,7 @@ Results will be exported to csv file in the desired location you provided
 - Stock status
 - No worries for No results.
 
-we have been working for further releases for the extensive use of customers.
+I am  working for further releases for the extensive use of customers.
 
 ## **Screenshots:**
 
