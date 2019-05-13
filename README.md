@@ -62,7 +62,8 @@ scrapy crawl flip\_spider
 
 you will be prompted to enter the desired product name
 ![alt text](https://github.com/vishnu-sagar/data-science/blob/master/scraping%20e-commerce%20sites/screens/input.PNG)
- ![]
+
+
 SMASH that ENTER key!!!!!!!!!!.
 
 Results will be saved and automatically opened in a csv file.
