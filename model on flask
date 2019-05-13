@@ -1,5 +1,0 @@
-import requests
-url =  'http://localhost:8080/predict/'
-data = [{"SepalLengthCm":5.1,"SepalWidthCm":3.4,"PetalLengthCm":1.5,"PetalWidthCm":0.2},{"SepalLengthCm":6.7,"SepalWidthCm":3,"PetalLengthCm":5,"PetalWidthCm":1.7}]
-r = requests.post(url,json=data)
-print(r.json())
