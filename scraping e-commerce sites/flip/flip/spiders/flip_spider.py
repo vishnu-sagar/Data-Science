@@ -1,6 +1,7 @@
 from scrapy.http import Request
 import scrapy
 from flip import settings
+import os
 
 product=settings.product
 print("FETCHING DETAILS")
@@ -138,4 +139,4 @@ class GoodsSpider(scrapy.Spider):
          
          yield {'Website':'Paytm MALL','Stock':stock,'Product':title,'Rating':rating,'Current Price':current_price,'Original Price':original_price,'LINK':link} 
         print("******************************************************************************SUCCESSFULLY IMPORTED TO CSV************************************************************************************")
-        
+        os.startfile(settings.csv_file_path)
