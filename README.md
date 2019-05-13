@@ -30,7 +30,7 @@ pip install scrapy
 if you are using anaconda use the below
 
 conda install -c conda-forge scrapy
-
+or
 conda install -c conda-forge/label/cf201901 scrapy
 
 **STEP**** -2       **
