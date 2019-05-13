@@ -81,7 +81,7 @@ I am  working for further releases for the extensive use of customers.
 
 ## **Screenshots:**
 
-###Demo outplut:
+###Demo output:
 ![alt text](https://github.com/vishnu-sagar/data-science/blob/master/scraping%20e-commerce%20sites/screens/output.PNG)
 Thanks for your time.
 
