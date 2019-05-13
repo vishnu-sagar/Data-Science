@@ -77,12 +77,10 @@ I am  working for further releases for the extensive use of customers.
 
 ## **Screenshots:**
 
-###Demo:
+###Demo outplut:
 ![alt text](https://github.com/vishnu-sagar/data-science/blob/master/scraping%20e-commerce%20sites/screens/output.PNG)
- ![]
 Thanks for your time.
 
-## **Executing the spider**
-[![Watch the video](https://github.com/vishnu-sagar/data-science/blob/master/scraping%20e-commerce%20sites/demo%20videos/how%20to%20execute%20spider.avi)
+Please take a look at the videos in demo videos folder :)
 
 
