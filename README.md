@@ -33,7 +33,7 @@ conda install -c conda-forge scrapy
 or
 conda install -c conda-forge/label/cf201901 scrapy
 
-**STEP**** -2       **
+**STEP-2**
 
 Navigate cmd to your desired folder and run 
 
@@ -56,7 +56,7 @@ That&#39;s it you are ready !!!!!
 
 **LAST STEP** (**don&#39;t get tired)
 
-**To start crawling run
+**To start crawling run**
 
 scrapy crawl flip\_spider
 
