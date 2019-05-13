@@ -32,6 +32,8 @@ if you are using anaconda use the below
 
 conda install -c conda-forge scrapy
 
+conda install -c conda-forge/label/cf201901 scrapy
+
 **STEP**** -2       **
 
 Navigate cmd to your desired folder run commands
