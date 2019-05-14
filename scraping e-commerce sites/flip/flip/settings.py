@@ -70,8 +70,8 @@ DOWNLOAD_DELAY = 3
 #    'flip.pipelines.FlipPipeline': 300,
 #}
 
-ITEM_PIPELINES = { 'flip.pipelines.WriteToCsv' : 300}
-#csv_file_path = r"C:\\Users\\vichu\\Desktop\\flip" +filename
+ITEM_PIPELINES = { 'flip.pipelines.WriteToCsv' : 300}#for writetocsv pipeline
+
 dir=r"C:\Users\vichu\Desktop\flip\flip"
 csv_file_path=os.path.join(dir,filename)
 # Enable and configure the AutoThrottle extension (disabled by default)
