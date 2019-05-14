@@ -62,7 +62,7 @@ class GoodsSpider(scrapy.Spider):
                 title=title=item.xpath('.//div/a/@title').extract_first()
             break  
             #export deatils to csv
-         yield {'Website':'Website','Stock':'Stock status','Product':'Product Name','Rating':'Rating','Original Price':'Original_price','Current Price':'Current_price','LINK':'link'}
+         yield {'Website':'Website','Stock':'Stock status','Product':'Product Name','Rating':'Rating','Current Price':'Current_price','Original Price':'original_price','LINK':'link'}
          yield {'Website':'Flipkart','Stock':stock,'Product':title,'Rating':Rating,'Current Price':current_price,'Original Price':original_price,'LINK':link}
         yield Request(url='https://www.amazon.in/s?k='+product, callback=self.parse_amazon) #call the next website parser
 
