@@ -49,7 +49,7 @@ class GoodsSpider(scrapy.Spider):
              stock="product out of stock"
             else:
              stock="IN STOCK"
-            )
+            
             if Rating==[]:
                 Rating='NO Rating available'
             else:
@@ -68,7 +68,7 @@ class GoodsSpider(scrapy.Spider):
 
     def parse_amazon(self, response):
          results=response.xpath('//h1[@id="noResultsTitle"]/text()').extract_first()
-)
+
          if results!=None:
             Noresult=results[0]+product+results[1]
             print(Noresult+"Please try correcting your spelling")
